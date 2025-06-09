@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<!--
+	حمزه وليد الافغاني 202304248
+	محمد فالح ابراهيم 202301029
+	محمد خير 202301233
+	كرم سمير حسين 202304164
+-->
+<head>
+    <title>Food.com</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+	body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #cc0000;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #cc0000;
+}
+
+.navbar {
+    background-color: #cc0000;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #cc0000;
+}
+
+.main {
+    padding: 20px;
+}
+
+.food-box, .delivery-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+}
+
+button {
+    background-color: #cc0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #333;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    color: #cc0000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #cc0000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+</style>
+
+<body>
+
+    
+    <div class="header">
+        <h1>Food</h1>
+        <p>Delicious food at your doorstep!</p>
+    </div>
+
+    
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </div>
+
+   
+    <div class="main">
+      <center>  <h2>Choose Your Food</h2> </center>
+
+       
+        <form>
+            <center>
+			<div class="food-box">
+                <label><input type="checkbox" name="food" value="burger"> Burger - $5.00</label><br>
+                <label><input type="checkbox" name="food" value="pizza"> Pizza - $8.50</label><br>
+                <label><input type="checkbox" name="food" value="fries"> Fries - $2.00</label><br>
+                <label><input type="checkbox" name="food" value="sandwich"> Sandwich - $4.25</label><br>
+				
+            </div>
+
+            <h3>Delivery Options</h3>
+            
+            <div class="delivery-box">
+                <label><input type="radio" name="delivery" value="normal"> Normal Delivery (30-45 mins)</label><br>
+                <label><input type="radio" name="delivery" value="fast"> Fast Delivery (+$2) (15-20 mins)</label><br>
+            </div>
+
+            <br>
+            <button type="submit">Place Order</button>
+			</center>
+        </form>
+		<center>
+        <h3>Special Offers</h3>
+        <ul>
+            <li>Free fries with every burger!</li>
+            <li>10% off all pizzas on weekends.</li>
+            <li>Buy 2 sandwiches, get 1 free!</li>
+        </ul>
+    </div>
+		</center>
+    
+    <div class="footer">
+        <p>© 2025 Food :)</p>
+    </div>
+
+</body>
+</html>
